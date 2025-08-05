@@ -1,0 +1,26 @@
+#
+# Copyright (c) 2023 Airbyte, Inc., all rights reserved.
+#
+
+connector_config:
+  type: object
+  required:
+    - client_id
+    - client_secret
+    - access_token
+  properties:
+    client_id:
+      type: string
+      title: Client ID
+      description: The Client ID for your TickTick application.
+      airbyte_secret: true
+    client_secret:
+      type: string
+      title: Client Secret
+      description: The Client Secret for your TickTick application.
+      airbyte_secret: true
+    access_token:
+      type: string
+      title: Access Token
+      description: The OAuth2 access token for your TickTick account.
+      airbyte_secret: true
